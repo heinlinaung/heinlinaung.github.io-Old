@@ -2,38 +2,35 @@
 	padding: 0;
 	width: 435px;
 	height: 70px;
-	margin: 0px auto 30px auto;
+	margin: 0px auto 10px auto;
 }
 .tt-wrapper li{
 	float: left;
 }
 .tt-wrapper li a{
 	display: block;
-	width: 68px;
-	height: 70px;
+	width: 104px;
+	height: 80px;
 	margin: 0 2px;
 	outline: none;
-	background: transparent url(../images/growcase_the_social_gunman_icons.png) no-repeat top left;
 	text-indent: -9000px;
 	position: relative;
 }
-.tt-wrapper li .tt-gplus{
+.tt-wrapper li .tt-github{
     background-position: 0px 0px;
+    background: transparent url(../images/github.png) no-repeat top left;
 }
 .tt-wrapper li .tt-twitter{
     background-position: -68px 0px;
-}
-.tt-wrapper li .tt-dribbble{
-    background-position: -136px 0px;
+    background: transparent url(../images/twitter.png) no-repeat top left;
 }
 .tt-wrapper li .tt-facebook{
     background-position: -204px 0px;
+    background: transparent url(../images/facebook.png) no-repeat top left;
 }
 .tt-wrapper li .tt-linkedin{
     background-position: -272px 0px;
-}
-.tt-wrapper li .tt-forrst{
-    background-position: -340px 0px;
+    background: transparent url(../images/linkedin.png) no-repeat top left;
 }
 .tt-wrapper li a span{
 	width: 100px;
@@ -89,6 +86,8 @@
 	border-top: 10px solid #fff;
 }
 .tt-wrapper li a:hover span{
+	background: #333;
+	color:#fff;
 	visibility: visible;
 	opacity: 0.9;
 	-webkit-transform: translate(0px) rotate(0deg) scale(1);

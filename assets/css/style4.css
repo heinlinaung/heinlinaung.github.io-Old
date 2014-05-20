@@ -1,16 +1,17 @@
 .tt-wrapper{
 	padding: 0;
-	width: 435px;
-	height: 70px;
-	margin: 0px auto 10px auto;
+	width: 100%;
+	height: 100%;
+	/*margin: 0px auto 10px auto;*/
+	/*margin-left: 36%;*/
 }
 .tt-wrapper li{
 	float: left;
 }
 .tt-wrapper li a{
 	display: block;
-	width: 104px;
-	height: 80px;
+	width: 81px;
+	height: 86px;
 	margin: 0 2px;
 	outline: none;
 	text-indent: -9000px;

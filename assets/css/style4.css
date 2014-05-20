@@ -11,7 +11,7 @@
 .tt-wrapper li a{
 	display: block;
 	width: 81px;
-	height: 86px;
+	height: 93px;
 	margin: 0 2px;
 	outline: none;
 	text-indent: -9000px;
@@ -34,16 +34,17 @@
     background: transparent url(../images/linkedin.png) no-repeat top left;
 }
 .tt-wrapper li a span{
-	width: 100px;
-	height: auto;
+	width: 110px;
+	height: 50px;
 	line-height: 20px;
 	padding: 10px;
-	left: 50%;
-	margin-left: -64px;
+	left: 45%;
+	top:-64%;
+	margin-left: -50px;
 	font-family: 'Alegreya SC', Georgia, serif;
 	font-weight: 400;	
-	font-style: italic;
-	font-size: 14px;
+	/*font-style: italic;*/
+	font-size: 11px;
 	color: #719DAB;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 	text-align: center;

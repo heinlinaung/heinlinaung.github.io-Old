@@ -267,7 +267,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 
 @media screen and (max-width:480px) {
   .csstransforms .cn-wrapper {
-    font-size: .68em;
+    font-size: .35em;
   }
 
   .cn-button {

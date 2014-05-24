@@ -29,7 +29,7 @@
 
 
 
-    <div id="pagewrap" class="pagewrap demo-1">
+    <div id="pagewrap" class="pagewrap">
       <div class="container show" id="page-1">
        <section>
         <p><a class="pageload-link" href="#page-2">Welcome to my Portfolio</a></p>
@@ -39,7 +39,6 @@
       <!-- The new page dummy; this would be dynamically loaded content -->
       <div class="container demo-1" id="page-2">
         
-
         <div id="slider" class="sl-slider-wrapper">
 
           <div class="sl-slider">
@@ -154,70 +153,7 @@
     <script type="text/javascript" src="assets/js/jquery.slitslider.js"></script>
     <script>
       (function() {
-
-
-        var Page = (function() {
-
-          var $navArrows = $( '#nav-arrows' ),
-            $nav = $( '#nav-dots > li ' ),
-            slitslider = $( '#slider' ).slitslider( {
-              onBeforeChange : function( slide, pos ) {
-
-                $nav.removeClass( 'nav-dot-current' );
-                $nav.eq( pos ).addClass( 'nav-dot-current' );
-
-              }
-            } ),
-
-            init = function() {
-
-              initEvents();
-              
-            },
-            initEvents = function() {
-
-              // add navigation events
-              $navArrows.children( ':last' ).on( 'click', function() {
-
-                slitslider.next();
-                return false;
-
-              } );
-
-              $navArrows.children( ':first' ).on( 'click', function() {
-                
-                slitslider.previous();
-                return false;
-
-              } );
-
-              $nav.each( function( i ) {
-              
-                $( this ).on( 'click', function( event ) {
-                  
-                  var $dot = $( this );
-                  
-                  if( !slitslider.isActive() ) {
-
-                    $nav.removeClass( 'nav-dot-current' );
-                    $dot.addClass( 'nav-dot-current' );
-                  
-                  }
-                  
-                  slitslider.jump( i + 1 );
-                  return false;
-                
-                } );
-                
-              } );
-
-            };
-
-            return { init : init };
-
-        })();
-        Page.init();
-
+        
         var pageWrap = document.getElementById( 'pagewrap' ),
           pages = [].slice.call( pageWrap.querySelectorAll( 'div.container' ) ),
           currentPage = 0,
@@ -238,13 +174,76 @@
                 currentPage = currentPage ? 0 : 1;
                 classie.addClass( pages[ currentPage ], 'show' );
 
+                //Start of PageSlide Function
+                var Page = (function() {
+                  var $navArrows = $( '#nav-arrows' ),
+                    $nav = $( '#nav-dots > li ' ),
+                    slitslider = $( '#slider' ).slitslider( {
+                      onBeforeChange : function( slide, pos ) {
+
+                        $nav.removeClass( 'nav-dot-current' );
+                        $nav.eq( pos ).addClass( 'nav-dot-current' );
+
+                      }
+                    } ),
+
+                    init = function() {
+
+                      initEvents();
+                      
+                    },
+                    initEvents = function() {
+
+                      // add navigation events
+                      $navArrows.children( ':last' ).on( 'click', function() {
+
+                        slitslider.next();
+                        return false;
+
+                      } );
+
+                      $navArrows.children( ':first' ).on( 'click', function() {
+                        
+                        slitslider.previous();
+                        return false;
+
+                      } );
+
+                      $nav.each( function( i ) {
+                      
+                        $( this ).on( 'click', function( event ) {
+                          
+                          var $dot = $( this );
+                          
+                          if( !slitslider.isActive() ) {
+
+                            $nav.removeClass( 'nav-dot-current' );
+                            $dot.addClass( 'nav-dot-current' );
+                          
+                          }
+                          
+                          slitslider.jump( i + 1 );
+                          return false;
+                        
+                        } );
+                        
+                      } );
+
+                    };
+
+                    return { init : init };
+                })();
+                Page.init();
+                //end of PageSlide function
+
               }, 2000 );
             } );
           } );
-          
+        
         }
 
         init();
+        
       })();
     </script>
   </body>

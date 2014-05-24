@@ -1,10 +1,9 @@
 .sl-slider-wrapper {
-	width: 100%;
-	height: 100%;
+	width: 800px;
+	height: 400px;
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
-	z-index: 0;
 }
 
 .sl-slider {
@@ -96,8 +95,6 @@
 /* Width and height is set dynamically */
 .sl-content-wrapper {
 	position: absolute;
-	height: 400px;
-	width: 300px;
 }
 
 .sl-content {
@@ -108,7 +105,7 @@
 
 /* Default styles for background colors */
 .sl-slide-horizontal .sl-slide-inner {
-	background: #5bc2ce;
+	background: #ddd;
 }
 
 .sl-slide-vertical .sl-slide-inner {

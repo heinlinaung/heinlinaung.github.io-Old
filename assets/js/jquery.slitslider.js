@@ -134,12 +134,10 @@
 		_getSize : function() {
 
 			this.size = {
-				// width : this.$elWrapper.outerWidth( true ),
-				// height : this.$elWrapper.outerHeight( true )
-				width : '100%',
-				height : '100%'
+				width : this.$elWrapper.outerWidth( true ),
+				height : this.$elWrapper.outerHeight( true )
 			};
-			// console.log(this.size);
+			console.log(this);
 
 		},
 		_layout : function() {
@@ -411,6 +409,7 @@
 			};
 			
 			this.$el.css( cssStyle ).find( 'div.sl-content-wrapper' ).css( cssStyle );
+		
 		},
 		_loadEvents : function() {
 			

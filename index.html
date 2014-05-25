@@ -162,7 +162,7 @@
 
         function init() {
           triggerLoading.forEach( function( trigger ) {
-            trigger.addEventListener( 'click', function( ev ) {
+            trigger.addEventListener( 'mouseover', function( ev ) {
               ev.preventDefault();
               loader.show();
               // after some time hide loader

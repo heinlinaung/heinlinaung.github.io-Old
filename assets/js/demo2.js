@@ -5,7 +5,7 @@
 
     //open and close menu when the button is clicked
 	var open = false;
-	button.addEventListener('click', handler, false);
+	button.addEventListener('mouseover', handler, false);
 
 	function handler(){
 	  if(!open){

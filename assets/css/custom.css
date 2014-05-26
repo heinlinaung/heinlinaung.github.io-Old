@@ -194,21 +194,12 @@
 	border-radius: 20%;
 }
 
-.demo-1 .sl-slide h2 {
-	color: #000;
-	text-shadow: 0 0 1px #000;
-	padding: 20px;
-	position: absolute;
-	font-size: 34px;
-	font-weight: 700;
-	letter-spacing: 13px;
-	text-transform: uppercase;
-	width: 80%;
-	left: 10%;
-	text-align: center;
-	line-height: 50px;
-	bottom: 50%;
-	margin: 0 0 -120px 0;
+.demo-1 .sl-slide h1 {
+		letter-spacing: 3px;
+		font-size: 35px;
+		/*color:red;*/
+		margin-top:60px;
+		text-align:center;
 }
 
 .demo-1 .sl-slide blockquote {
@@ -223,7 +214,7 @@
 	color: #8b8b8b;
 	z-index: 2;
 	bottom: 50%;
-	margin: 0 0 -200px 0;
+	margin: 0 0 -50px 0;
 	padding: 0;
 }
 
@@ -524,29 +515,30 @@
 
 @media screen and (max-width: 660px) {
 	.demo-1 .deco {
-		width: 130px;
+		width: 290px;
 		height: 130px;
-		margin-left: -65px;
+		margin-left: -144px;
 		margin-bottom: 50px;
 	}
 
 	.demo-1 [data-icon]:after {
-		width: 110px;
+		width: 270px;
 		height: 110px;
 		line-height: 110px;
 		font-size: 40px;
-		margin: -55px 0 0 -55px;
+		margin: -138px 0 0 -136px;
 	}
 
 	.demo-1 .sl-slide blockquote {
 		margin-bottom: -120px;
 	}
 
-	.demo-1 .sl-slide h2 {
-		line-height: 22px;
-		font-size: 18px;
-		margin-bottom: -40px;
-		letter-spacing: 8px;
+	.demo-1 .sl-slide h1 {
+		letter-spacing: 3px;
+		font-size: 30px;
+		color:red;
+		margin-top:45px;
+		text-align:center;
 	}
 
 	.demo-1 .sl-slide blockquote p:before {

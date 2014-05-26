@@ -112,3 +112,13 @@
 	background: #ccc;
 }
 
+.my_title{
+	font-size:large;
+	font-weight: bold;
+	color: #ccc;
+	padding: 10px 0px;
+}
+.my_content{
+	color: #ccc;
+	line-height: 5px;
+}

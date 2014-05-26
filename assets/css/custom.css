@@ -210,12 +210,13 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
-	height: 70px;
+	height: 250px;
 	color: #8b8b8b;
 	z-index: 2;
-	bottom: 50%;
-	margin: 0 0 -50px 0;
+	bottom: 35%;
+	margin: 0 0 -130px 0;
 	padding: 0;
+	overflow: scroll;
 }
 
 .demo-1 .sl-slide blockquote p{

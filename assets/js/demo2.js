@@ -5,7 +5,7 @@
 
     //open and close menu when the button is clicked
 	var open = false;
-	// button.addEventListener('click', handler, false); // for MOBILE VERSION
+	button.addEventListener('click', handler, false); // for MOBILE VERSION
 	button.addEventListener('mouseover', handler, false); 
 	wrapper.addEventListener('mouseout', handler, false);
 

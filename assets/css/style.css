@@ -224,3 +224,7 @@
 	-ms-transform: translate(0px) rotate(0deg) scale(1);
 	transform: translate(0px) rotate(0deg) scale(1);
 }
+
+.nav-link-color{
+	background: lightseagreen;
+}

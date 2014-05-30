@@ -291,6 +291,6 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   }
 }
 .cn-wrapper:hover{
-  box-shadow: 0 0 20px 3px grey;
+  box-shadow: 0 0 25px 3px grey;
   opacity: 1;
 };

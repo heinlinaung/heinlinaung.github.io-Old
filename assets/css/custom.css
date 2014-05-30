@@ -256,14 +256,14 @@
 .demo-1 .bg-1 .sl-slide-inner,
 .demo-1 .bg-1 .sl-content-slice {
 	/*background: #ccc;*/
-	background-image: url(../images/1.png);
+	background-image: url(../images/2.png);
 }
 
 /* Second Slide */
 .demo-1 .bg-2 .sl-slide-inner,
 .demo-1 .bg-2 .sl-content-slice {
 	/*background: #000;*/
-	background-image: url(../images/2.png);
+	background-image: url(../images/3.png);
 }
 
 .demo-1 .bg-2 [data-icon]:after,
@@ -279,7 +279,7 @@
 .demo-1 .bg-3 .sl-slide-inner,
 .demo-1 .bg-3 .sl-content-slice {
 	/*background: #db84ad;*/
-	background-image: url(../images/1.png);
+	background-image: url(../images/4.png);
 }
 
 .demo-1 .bg-3 .deco {
@@ -307,7 +307,7 @@
 .demo-1 .bg-4 .sl-slide-inner,
 .demo-1 .bg-4 .sl-content-slice {
 	/*background: #5bc2ce;*/
-	background-image: url(../images/2.png);
+	background-image: url(../images/5.png);
 }
 
 .demo-1 .bg-4 .deco {
@@ -333,7 +333,7 @@
 .demo-1 .bg-5 .sl-slide-inner,
 .demo-1 .bg-5 .sl-content-slice {
 	/*background: #ffeb41;*/
-	background-image: url(../images/1.png);
+	background-image: url(../images/6.png);
 }
 
 .demo-1 .bg-5 .deco {

@@ -38,7 +38,7 @@ body {
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
 .csstransforms .opened-nav {

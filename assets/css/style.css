@@ -133,6 +133,7 @@
 }
 .tt-wrapper li{
 	float: left;
+	padding: 0px 45px;
 }
 .tt-wrapper li a{
 	display: block;

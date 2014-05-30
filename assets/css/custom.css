@@ -216,7 +216,7 @@
 	bottom: 35%;
 	margin: 0 0 -130px 0;
 	padding: 0;
-	overflow: scroll;
+	/*overflow: scroll;*/
 }
 
 .demo-1 .sl-slide blockquote p{

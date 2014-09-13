@@ -247,3 +247,9 @@
 	color:white;
 	text-shadow: 3px 2px 2px #000;	
 }
+@media screen and (max-width: 660px){
+	.my_title{
+		width: 45%;
+		margin-left: 27%;
+	}
+}

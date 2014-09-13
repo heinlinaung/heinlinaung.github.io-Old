@@ -115,8 +115,12 @@
 .my_title{
 	font-size:large;
 	font-weight: bold;
-	color: #ccc;
-	padding: 10px 0px;
+	color: white;
+	padding: 10px 20px;
+	background: #444;
+	border:1px solid #555;
+	width: 19%;
+	margin-left: 40%;
 }
 .my_content{
 	color: #ccc;

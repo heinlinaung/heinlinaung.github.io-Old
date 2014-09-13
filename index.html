@@ -18,6 +18,8 @@
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/demo-tooltip.css" /> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style4.css" />
     <script src="assets/js/snap.svg-min.js"></script>
+    <script src="assets/js/motio.min.js"></script>
+    <script src="assets/js/motio.js"></script>
     <script src="assets/js/modernizr-2.6.2.min.js"></script>
     
     <noscript>
@@ -32,7 +34,7 @@
       <div class="container show" id="page-1">
        <section>
         <cite style="text-transform:uppercase;"><h1>Welcome to my Portfolio!</h1></cite>
-        <p><a class="pageload-link" href="#page-2">Click here!</a></p>
+        <p><a class="pageload-link" href="#page-2">Start browsing!</a></p>
        </section>
       </div><!-- /container -->
 
@@ -300,8 +302,14 @@
         }
 
         init();
-        
+        var element = document.querySelector('.container');
+        var panning = new Motio(element, {
+            fps: 30, // Frames per second. More fps = higher CPU load.
+            speedX: -100 // Negative horizontal speed = panning to left.
+        });
+        panning.play();    // start animation
       })();
+
     </script>
   </body>
 </html>

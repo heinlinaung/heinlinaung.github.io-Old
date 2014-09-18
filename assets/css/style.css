@@ -239,13 +239,9 @@
 	top:-2px;
 }
 .title_link{
-	display: block;
-	color:white;
-}
-.my_title a:hover{
-	font-size:20px;
-	color:white;
-	text-shadow: 3px 2px 2px #000;	
+	/*display: block;*/
+	padding: 5px 0px;
+	color:#ccc;
 }
 @media screen and (max-width: 660px){
 	.my_title{

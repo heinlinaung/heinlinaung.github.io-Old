@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/all.css" />
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    
     <script src="assets/js/snap.svg-min.js"></script>
     <script src="assets/js/motio.min.js"></script>
     <script src="assets/js/dynamo.min.js"></script>
@@ -58,15 +60,16 @@
                 <blockquote style="padding-top:37px;top:41%;">
                     <nav class="cl-effect-21">
                       <div class="my_title" >
-                        <a class="title_link" href="#">Zwenexsys</a>
+                      <!-- <button class="btn btn-small" onclick="edit_row()"><i class="icon icon-pencil"></i>Edit</button> -->
+                        <a class="title_link" href="#" data-toggle="modal" data-target="#myModal" onclick="call_dialog(1)">Zwenexsys</a>
                       </div><br/>
                       
                       <div class="my_title" >
-                        <a class="title_link" href="#">Pioneer webline</a>
+                        <a class="title_link" href="#"  data-toggle="modal" data-target="#myModal" onclick="call_dialog(2)">Pioneer webline</a>
                       </div><br/>
                       
                       <div class="my_title" >
-                        <a class="title_link" href="#">MCC Computer Center</a>
+                        <a class="title_link" href="#"  data-toggle="modal" data-target="#myModal" onclick="call_dialog(3)">MCC Computer Center</a>
                       </div>
                     </nav>
                 </blockquote>
@@ -280,6 +283,32 @@
         $('.changingtxt').dynamo() //Calling dynamojs
       })();
 
+      function call_dialog(index_id) {
+        // $('#modal-body').append(index_id)
+        $.getJSON( "\data.json", function( json ) {
+          console.log( json );
+         });
+      }
+
     </script>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div id="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
   </body>
 </html>

@@ -61,7 +61,7 @@
                     <nav class="cl-effect-21">
                       <div class="my_title" >
                       <!-- <button class="btn btn-small" onclick="edit_row()"><i class="icon icon-pencil"></i>Edit</button> -->
-                        <a class="title_link" href="#" data-toggle="modal" data-target="#myModal" onclick="call_dialog(1)">Zwenexsys</a>
+                        <a class="title_link" href="#" data-toggle="modal" data-target="#myModal" onclick="call_dialog(1) $('#modal-body').empty();">Zwenexsys</a>
                       </div><br/>
                       
                       <div class="my_title" >
@@ -286,6 +286,7 @@
       function call_dialog(index_id) {
         // $('#modal-body').append(index_id)
         $.getJSON( "\data.json", function( json ) {
+          $('#modal-body').empty();
           if(index_id==1){
             $('#modal-body').append(json.one);
           }else if(index_id==2){
@@ -297,7 +298,6 @@
           }else if(index_id==5){
             $('#modal-body').append(json.five);
           }
-          $('#modal-body').empty();
          });
       }
 

@@ -286,17 +286,17 @@
       function call_dialog(index_id) {
         // $('#modal-body').append(index_id)
         $.getJSON( "\data.json", function( json ) {
-          $('#modal-body').append("")
+          $('#modal-body').empty();
           if(index_id==1){
-            $('#modal-body').append(json.one)
+            $('#modal-body').append(json.one);
           }else if(index_id==2){
-            $('#modal-body').append(json.two)
+            $('#modal-body').append(json.two);
           }else if(index_id==3){
-            $('#modal-body').append(json.three)
+            $('#modal-body').append(json.three);
           }else if(index_id==4){
-            $('#modal-body').append(json.four)
+            $('#modal-body').append(json.four);
           }else if(index_id==5){
-            $('#modal-body').append(json.five)
+            $('#modal-body').append(json.five);
           }
          });
       }

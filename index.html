@@ -286,7 +286,7 @@
       function call_dialog(index_id) {
         // $('#modal-body').append(index_id)
         $.getJSON( "\data.json", function( json ) {
-          alert(json.one)
+          $('#modal-body').append(json.one)
          });
       }
 
@@ -300,7 +300,7 @@
             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
           </div>
           <div id="modal-body">
-            ...
+            
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

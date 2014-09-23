@@ -286,9 +286,9 @@
       function call_dialog(index_id) {
         // $('#modal-body').append(index_id)
         $.getJSON( "\data.json", function( json ) {
-          $('#modal-body').empty();
           if(index_id==1){
             $('#modal-body').append(json.one);
+            console.log(json.one)
           }else if(index_id==2){
             $('#modal-body').append(json.two);
           }else if(index_id==3){
@@ -297,6 +297,10 @@
             $('#modal-body').append(json.four);
           }else if(index_id==5){
             $('#modal-body').append(json.five);
+          }else if(index_id==6){
+            $('#modal-body').append(json.six);
+          }else if(index_id==7){
+            $('#modal-body').append(json.seven);
           }
          });
       }

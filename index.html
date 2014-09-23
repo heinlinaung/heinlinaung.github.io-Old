@@ -286,6 +286,7 @@
       function call_dialog(index_id) {
         // $('#modal-body').append(index_id)
         $.getJSON( "\data.json", function( json ) {
+          $('#modal-body').append("")
           if(index_id==1){
             $('#modal-body').append(json.one)
           }else if(index_id==2){

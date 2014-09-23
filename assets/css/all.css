@@ -455,3 +455,14 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 .modal-footer .btn+.btn{margin-left:5px;margin-bottom:0;}
 .modal-footer .btn-group .btn+.btn{margin-left:-1px;}
 .modal-footer .btn-block+.btn-block{margin-left:0;}
+.modal { 
+    position: fixed; 
+    top: 3%; 
+    right: 3%; 
+    left: 3%; 
+    width: auto; 
+    margin: 0; 
+}
+.modal-body { 
+    height: 60%; 
+}
